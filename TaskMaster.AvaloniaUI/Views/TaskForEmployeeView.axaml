@@ -1,0 +1,30 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TaskMaster.AvaloniaUI.Views.TaskForEmployeeView">
+
+  <Border Classes="Inner"  Margin="5" Padding="5" CornerRadius="10" BorderThickness="5" BorderBrush="LightCoral" Background="WhiteSmoke">
+  <Expander Background="Transparent">
+    <Expander.Header>
+      <StackPanel Orientation="Horizontal" Margin="5">
+        <TextBlock Text="{Binding ShortDescription}" Margin="5" Padding="5"/>
+        <TextBlock Text="{Binding DeadLine}" Margin="5" Padding="5"/>
+      </StackPanel>
+    </Expander.Header>
+    <StackPanel Orientation="Vertical">
+      <TextBlock Text="{Binding LongDescription}" Margin="5" Padding="5"/>
+      <StackPanel Orientation="Horizontal">
+        <TextBlock Text="Executor Id:" Margin="5" Padding="5"/>
+        <TextBlock Text="{Binding Id}" Margin="5" Padding="5"/>
+      </StackPanel>
+      
+      <StackPanel Orientation="Horizontal">
+        <Button Content="Delete" Command="{Binding DeleteTaskCommand}"/>
+       
+      </StackPanel>
+    </StackPanel>
+  </Expander>
+  </Border>
+</UserControl>

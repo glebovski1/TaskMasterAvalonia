@@ -1,0 +1,22 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Design.PreviewWith>
+    <Border Padding="20">
+
+    </Border>
+  </Design.PreviewWith>
+  <Style Selector="Border.Main">
+    <Setter Property="CornerRadius" Value="20"/>
+    <Setter Property="BorderThickness" Value="5"/>
+    <Setter Property="Background" Value="AliceBlue"/>
+  </Style>
+  <Style Selector="Border.Inner">
+    <Setter Property="CornerRadius" Value="10"/>
+    <Setter Property="BorderThickness" Value="5"/>
+    <Setter Property="BorderBrush" Value="LightCoral"/>
+    <Setter Property="Background" Value="WhiteSmoke"/>
+  </Style>
+  
+  
+  <!--CornerRadius="20" BorderThickness="5" Background="AliceBlue" Add Styles Here -->
+</Styles>

@@ -1,0 +1,39 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="400"
+             x:Class="TaskMaster.AvaloniaUI.Views.EmployeeView" >
+
+  <Border Classes="Inner" Margin="5" Padding="5" CornerRadius="10" BorderThickness="5" BorderBrush="LightCoral" Background="WhiteSmoke">
+    <Expander  Header="{Binding FirstName}"  Margin="5" Padding="5" Grid.Row="0" HorizontalContentAlignment="Stretch" Background="Transparent" >
+
+      <StackPanel Orientation="Vertical" Margin="5">
+        <StackPanel Orientation="Horizontal"  Margin="5">
+          <TextBlock Text="First name: " Padding="5"/>
+          <TextBlock Text="{Binding FirstName}" Padding="5"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="5">
+          <TextBlock Text="Last name: " Padding="5" />
+          <TextBlock Text="{Binding LastName}" Padding="5"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5">
+          <TextBlock Text="Position: " Padding="5"/>
+          <TextBlock Text="{Binding Position}" Padding="5"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5">
+          <Button Content="Add task" Padding="5" Margin="5" Command="{Binding AddTaskCommand}"/>
+          <Button Content="Delete" Padding="5" Margin="5" Command="{Binding DeleteCommand}"/>
+         
+        </StackPanel>
+       
+          <Expander  Header="Tasks" Margin="5" Padding="5" HorizontalContentAlignment="Stretch" Background="Transparent">
+            <ListBox Items="{Binding Tasks}" ScrollViewer.VerticalScrollBarVisibility="Visible"  />
+          </Expander>
+       
+      </StackPanel>
+    </Expander>
+  
+  </Border>
+</UserControl>

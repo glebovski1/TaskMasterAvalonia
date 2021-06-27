@@ -1,0 +1,25 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TaskMaster.AvaloniaUI.Views.NewTaskView">
+  
+
+  <StackPanel  Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <StackPanel Orientation="Horizontal" Margin="5" >
+      <TextBlock Text="Short description" Margin="5" Padding="5" />
+      <TextBox Text="{Binding ShortDescription}" Margin="5" Padding="5"/>
+    </StackPanel>
+    <StackPanel Orientation="Horizontal" Margin="5">
+      <TextBlock Text="Long description" Margin="5" Padding="5" />
+      <TextBox Text="{Binding LongDescription}" Margin="5" Padding="5"/>
+    </StackPanel>
+    <StackPanel Orientation="Horizontal" Margin="5">
+      <TextBlock Text="Dead line" Margin="5" Padding="5"/>
+      <DatePicker Margin="5" Padding="5" SelectedDate="{Binding DeadLine, Mode=TwoWay}"/>
+    </StackPanel>
+    <Button Content="Add task" HorizontalAlignment="Center" VerticalContentAlignment="Center" Command="{Binding AddTaskCommand}"/>
+  </StackPanel>
+
+</UserControl>

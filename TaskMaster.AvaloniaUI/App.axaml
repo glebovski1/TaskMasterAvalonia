@@ -1,0 +1,17 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:TaskMaster.AvaloniaUI"
+             x:Class="TaskMaster.AvaloniaUI.App">
+  <Application.DataTemplates>
+    <local:ViewLocator/>
+  </Application.DataTemplates>
+
+  <Application.Styles>
+    <FluentTheme Mode="Light"/>
+    <Style Selector="Border.Main">
+      <Setter Property="CornerRadius" Value="20"/>
+      <Setter Property="BorderThickness" Value="5"/>
+      <Setter Property="Background" Value="AliceBlue"/>
+    </Style>
+  </Application.Styles>
+</Application>

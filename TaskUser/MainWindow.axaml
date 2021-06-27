@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="600"
+        Height="600"
+        Width="400"
+        MaxHeight="600"
+        MaxWidth="400"
+        MinHeight="600"
+        MinWidth="400"
+        x:Class="TaskUser.MainWindow"
+        Title="TaskUser">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="100"/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition Height="50"/>
+    </Grid.RowDefinitions>
+    <Border Grid.Row="0" Background="Coral"/>
+    <TextBlock Grid.Row="0"  Text="TASK USER" TextAlignment="Center" VerticalAlignment="Center"  Background="Transparent" FontSize="25" FontWeight="DemiBold" FontFamily="Italic" Foreground="BlueViolet"/>
+    <ComboBox  Grid.Row="1" Items="{Binding Employees}" HorizontalAlignment="Center" Width="350" Background="AliceBlue" Margin="15" >
+      <ComboBox.ItemTemplate>
+        <DataTemplate>
+          <TextBlock Text="{Binding  Path=FirstName}"/>
+        </DataTemplate>
+      </ComboBox.ItemTemplate>
+    </ComboBox>
+    
+   
+    <Border Grid.Row="3" Background="Coral"/>
+
+  </Grid>
+
+</Window>
