@@ -15,7 +15,7 @@
       <RowDefinition Height="0.9*" />
     </Grid.RowDefinitions >
     <StackPanel Grid.Row="0" Grid.Column="0" Margin="5"  >
-      <Button Content="Add user" Margin="5" Command="{Binding NewEmployeeCommand}"/>
+      <Button Content="Add user" Margin="5" Command="{Binding NewEmployeeCommand}" Background="Coral"/>
 
     </StackPanel>
     <Border Classes="Main" Grid.Row="0" Grid.Column="1" >

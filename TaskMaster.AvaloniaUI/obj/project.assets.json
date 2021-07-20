@@ -4660,11 +4660,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ugleb\\source\\repos\\TaskMaster.AvaloniaUI\\TaskMaster.AvaloniaUI\\TaskMaster.AvaloniaUI.csproj",
+      "projectUniqueName": "C:\\Users\\Ugleb\\OneDrive\\Documents\\GitHub\\TaskMasterAvalonia\\TaskMaster.AvaloniaUI\\TaskMaster.AvaloniaUI.csproj",
       "projectName": "TaskMaster.AvaloniaUI",
-      "projectPath": "C:\\Users\\Ugleb\\source\\repos\\TaskMaster.AvaloniaUI\\TaskMaster.AvaloniaUI\\TaskMaster.AvaloniaUI.csproj",
+      "projectPath": "C:\\Users\\Ugleb\\OneDrive\\Documents\\GitHub\\TaskMasterAvalonia\\TaskMaster.AvaloniaUI\\TaskMaster.AvaloniaUI.csproj",
       "packagesPath": "C:\\Users\\Ugleb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ugleb\\source\\repos\\TaskMaster.AvaloniaUI\\TaskMaster.AvaloniaUI\\obj\\",
+      "outputPath": "C:\\Users\\Ugleb\\OneDrive\\Documents\\GitHub\\TaskMasterAvalonia\\TaskMaster.AvaloniaUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ugleb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4681,8 +4681,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Ugleb\\source\\repos\\TaskMaster.AvaloniaUI\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Ugleb\\source\\repos\\TaskMaster.AvaloniaUI\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\Ugleb\\OneDrive\\Documents\\GitHub\\TaskMasterAvalonia\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Ugleb\\OneDrive\\Documents\\GitHub\\TaskMasterAvalonia\\DataAccess\\DataAccess.csproj"
             }
           }
         }
@@ -4733,7 +4733,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

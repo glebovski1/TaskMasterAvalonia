@@ -1985,11 +1985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ugleb\\source\\repos\\TaskMaster.AvaloniaUI\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Ugleb\\OneDrive\\Documents\\GitHub\\TaskMasterAvalonia\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\Ugleb\\source\\repos\\TaskMaster.AvaloniaUI\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\Ugleb\\OneDrive\\Documents\\GitHub\\TaskMasterAvalonia\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\Ugleb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ugleb\\source\\repos\\TaskMaster.AvaloniaUI\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\Ugleb\\OneDrive\\Documents\\GitHub\\TaskMasterAvalonia\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ugleb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2050,7 +2050,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

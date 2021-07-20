@@ -23,8 +23,8 @@
           <TextBlock Text="{Binding Position}" Padding="5"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="5">
-          <Button Content="Add task" Padding="5" Margin="5" Command="{Binding AddTaskCommand}"/>
-          <Button Content="Delete" Padding="5" Margin="5" Command="{Binding DeleteCommand}"/>
+          <Button Content="Add task" Padding="5" Margin="5" Command="{Binding AddTaskCommand}" Background="Coral"/>
+          <Button Content="Delete" Padding="5" Margin="5" Command="{Binding DeleteCommand}" Background="Coral"/>
          
         </StackPanel>
        

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "km7vaBe1I719b56AuE+ottvvc4WFwFuB7guS4EbLPr7QtB787i1XxSpVEa93jqZnIdCMcycvmhgxlx01YwVbtw==",
+  "dgSpecHash": "nyfGtQDeAB0mBVjovCrxiHpVu3FWfkYwXmjnddshr1KQcZ6KjQMtlbgOFLPWMjRnNmgJ2w6ghgs/Cy9Hq1mXqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ugleb\\source\\repos\\TaskMaster.AvaloniaUI\\TaskMaster.AvaloniaUI\\TaskMaster.AvaloniaUI.csproj",
+  "projectFilePath": "C:\\Users\\Ugleb\\OneDrive\\Documents\\GitHub\\TaskMasterAvalonia\\TaskMaster.AvaloniaUI\\TaskMaster.AvaloniaUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ugleb\\.nuget\\packages\\avalonia\\0.10.3\\avalonia.0.10.3.nupkg.sha512",
     "C:\\Users\\Ugleb\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2020091801\\avalonia.angle.windows.natives.2.1.0.2020091801.nupkg.sha512",

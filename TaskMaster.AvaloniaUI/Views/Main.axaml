@@ -4,7 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="TaskMaster.AvaloniaUI.Views.Main"
-        Title="Main">
+        Title="Task Master">
   <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="50"/>
@@ -17,9 +17,9 @@
     </Border>
     <Grid  Grid.Row="1">
       <StackPanel Orientation="Horizontal"  ClipToBounds="True" Margin="5" VerticalAlignment="Center">
-        <Button  Content="Users" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5" Padding="5" Height="45" Width="60" Command="{Binding GoToUsersCommand}"/>
-        <Button Content="Task" FontSize="16"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5" Padding="5" Height="45" Width="60" Command="{Binding GoToTasksCommand}"/>
-        <Button Content="Calendar" FontSize="16"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5" Padding="5" Height="45" Width="80" Command="{Binding GoToCalendarCommand}"/>
+        <Button  Content="Users" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5" Padding="5" Height="45" Width="60" Command="{Binding GoToUsersCommand}" Background="Coral"/>
+        <Button Content="Task" FontSize="16"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5" Padding="5" Height="45" Width="60" Command="{Binding GoToTasksCommand}" Background="Coral"/>
+        <Button Content="Calendar" FontSize="16"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5" Padding="5" Height="45" Width="80" Command="{Binding GoToCalendarCommand}" Background="Coral"/>
       </StackPanel>
     </Grid>
     

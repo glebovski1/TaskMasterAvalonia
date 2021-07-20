@@ -19,7 +19,7 @@
       <TextBlock Text="Dead line" Margin="5" Padding="5"/>
       <DatePicker Margin="5" Padding="5" SelectedDate="{Binding DeadLine, Mode=TwoWay}"/>
     </StackPanel>
-    <Button Content="Add task" HorizontalAlignment="Center" VerticalContentAlignment="Center" Command="{Binding AddTaskCommand}"/>
+    <Button Content="Add task" HorizontalAlignment="Center" VerticalContentAlignment="Center" Command="{Binding AddTaskCommand}" Background="Coral"/>
   </StackPanel>
 
 </UserControl>

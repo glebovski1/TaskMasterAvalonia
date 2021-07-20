@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hc+H7LzNRaIKkxhGOBKMnkGe9ZzOGmd1Pjq8dPo7Plok+pqKCIeMntFVYcLfku22BgK6cFDEEa/T4nmtdklbVQ==",
+  "dgSpecHash": "wuZxbyZr4/ZuvKUUnDuXWsofWv5e0KZQtZ+E5FRHOKD9xyJcGIRWpCQYLW1tL23RhMWwxM0l21eOiZJRK3FxbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ugleb\\source\\repos\\TaskMaster.AvaloniaUI\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Ugleb\\OneDrive\\Documents\\GitHub\\TaskMasterAvalonia\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ugleb\\.nuget\\packages\\entityframework\\6.3.0\\entityframework.6.3.0.nupkg.sha512",
     "C:\\Users\\Ugleb\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
