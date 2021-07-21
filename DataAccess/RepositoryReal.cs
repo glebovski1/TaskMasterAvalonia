@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TaskMaster.DataAccess.Models;
 
 namespace DataAccess
@@ -57,6 +54,28 @@ namespace DataAccess
         {
             DeleteTaskForEmployee(context.TaskForEmployees.Find(taskId));
             
+        }
+        public void EditEmployee(Employee employee)
+        {
+            var oldEmployee = context.Employees.Find(employee.Id);
+            if(oldEmployee.FirstName != employee.FirstName && employee.FirstName != null)
+            {
+                oldEmployee.FirstName = employee.FirstName;
+            }
+            if(oldEmployee.LastName != employee.LastName && employee.LastName != null) 
+            {
+                oldEmployee.LastName = employee.LastName;
+            }
+            if(oldEmployee.Position != employee.Position && employee.Position != null) 
+            {
+                oldEmployee.Position = employee.Position;
+            }
+            context.SaveChanges();
+        }
+
+        public Employee FindEmployee(int id)
+        {
+           return context.Employees.Find(id);
         }
 
     }

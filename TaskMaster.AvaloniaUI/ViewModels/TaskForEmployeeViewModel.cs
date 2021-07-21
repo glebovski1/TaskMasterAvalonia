@@ -24,16 +24,18 @@ namespace TaskMaster.AvaloniaUI.ViewModels
         //public Employee Employee { get; set; }
         public bool Done { get; set; } = false;
         public bool Failed { get; set; } = false;
-        public TaskForEmployeeViewModel(TaskForEmployee employee)
+        public TaskForEmployeeViewModel(TaskForEmployee task)
         {
            
-            ShortDescription = employee.ShortDescription;
-            LongDescription = employee.LongDescription;
-            DeadLine = employee.DeadLine;
-            Done = employee.Done;
-            Failed = employee.Failed;
-            Id = employee.Id;
+            ShortDescription = task.ShortDescription;
+            LongDescription = task.LongDescription;
+            DeadLine = task.DeadLine;
+            Done = task.Done;
+            Failed = task.Failed;
+            Id = task.Id;
+            
             repository = new RepositoryReal();
+            EmployeeName = task.Employee?.FirstName;
             DeleteTaskCommand = ReactiveCommand.Create(DeleteTask);
         }
         public ReactiveCommand<Unit, Unit> DeleteTaskCommand { get;  }

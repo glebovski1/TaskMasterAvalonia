@@ -39,7 +39,7 @@ namespace TaskMaster.AvaloniaUI.ViewModels
         private void NewEmployee()
         {
            
-            var newEmployee = new NewEmployeeViewModel();
+            var newEmployee = new NewEmployeeViewModel(null);
             Window window = new Window();
             window.Height = 400;
             window.Width = 400;

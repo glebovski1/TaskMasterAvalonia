@@ -19,6 +19,10 @@
         <TextBlock Text="Executor Id:" Margin="5" Padding="5"/>
         <TextBlock Text="{Binding Id}" Margin="5" Padding="5"/>
       </StackPanel>
+      <StackPanel Orientation="Horizontal">
+        <TextBlock Text="Executor Name:" Margin="5" Padding="5"/>
+        <TextBlock Text="{Binding EmployeeName}" Margin="5" Padding="5"/>
+        </StackPanel>
       
       <StackPanel Orientation="Horizontal">
         <Button Content="Delete" Command="{Binding DeleteTaskCommand}" Background="Coral"/>

@@ -43,8 +43,22 @@ namespace TaskMaster.AvaloniaUI.ViewModels
             //Tasks = employee.Tasks?.Select(task => new TaskForEmployeeViewModel(task)).ToList();
             DeleteCommand = ReactiveCommand.Create(Delete);
             AddTaskCommand = ReactiveCommand.Create(AddTask);
+            EditeEmployeeCommand = ReactiveCommand.Create(EditeEmployee);
             repository = new RepositoryReal();
             LoadData();
+        }
+
+        private void EditeEmployee()
+        {
+            var newEmployee = new NewEmployeeViewModel(this.GetModel());
+            Window window = new Window();
+            window.Height = 400;
+            window.Width = 400;
+            newEmployee.CloseWindow += () => window.Close();
+            newEmployee.CloseWindow += () => Update();
+            newEmployee.CloseWindow += () => parentView.Update();
+            window.Content = newEmployee;
+            window.Show();
         }
         public Employee GetModel()
         {
@@ -58,6 +72,7 @@ namespace TaskMaster.AvaloniaUI.ViewModels
         }
         public ReactiveCommand<Unit, Unit> DeleteCommand { get; }
         public ReactiveCommand<Unit, Unit> AddTaskCommand { get; }
+        public ReactiveCommand<Unit, Unit> EditeEmployeeCommand { get; }
 
         private void Delete()
         {
