@@ -56,7 +56,7 @@ namespace TaskMaster.AvaloniaUI.ViewModels
             window.Width = 400;
             newEmployee.CloseWindow += () => window.Close();
             newEmployee.CloseWindow += () => Update();
-            newEmployee.CloseWindow += () => parentView.Update();
+            //newEmployee.CloseWindow += () => parentView.Update();
             window.Content = newEmployee;
             window.Show();
         }
@@ -87,8 +87,15 @@ namespace TaskMaster.AvaloniaUI.ViewModels
         }
         public void Update()
         {
+            var employee = repository.FindEmployee(this.Id);
+            this.FirstName = employee.FirstName;
+            this.LastName = employee.LastName;
+            this.Position = employee.Position;
             LoadData();
             this.RaisePropertyChanged("Tasks");
+            this.RaisePropertyChanged("FirstName");
+            this.RaisePropertyChanged("LastName");
+            this.RaisePropertyChanged("Position");
         }
         private void AddTask()
         {
