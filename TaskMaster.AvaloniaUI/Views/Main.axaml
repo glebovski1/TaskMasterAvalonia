@@ -19,7 +19,7 @@
       <StackPanel Orientation="Horizontal"  ClipToBounds="True" Margin="5" VerticalAlignment="Center">
         <Button  Content="Users" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5" Padding="5" Height="45" Width="60" Command="{Binding GoToUsersCommand}" Background="Coral"/>
         <Button Content="Task" FontSize="16"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5" Padding="5" Height="45" Width="60" Command="{Binding GoToTasksCommand}" Background="Coral"/>
-        <Button Content="Calendar" FontSize="16"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="5" Padding="5" Height="45" Width="80" Command="{Binding GoToCalendarCommand}" Background="Coral"/>
+       
       </StackPanel>
     </Grid>
     

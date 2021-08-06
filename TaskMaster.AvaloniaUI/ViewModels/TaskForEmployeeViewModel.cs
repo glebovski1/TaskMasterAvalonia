@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reactive;
+using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TaskMaster.DataAccess.Models;
@@ -37,6 +38,8 @@ namespace TaskMaster.AvaloniaUI.ViewModels
             repository = new RepositoryReal();
             EmployeeName = task.Employee?.FirstName;
             DeleteTaskCommand = ReactiveCommand.Create(DeleteTask);
+
+            
         }
         public ReactiveCommand<Unit, Unit> DeleteTaskCommand { get;  }
         private void DeleteTask()
